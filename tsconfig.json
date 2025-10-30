@@ -1,0 +1,94 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "incremental": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": false,
+    "strictNullChecks": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*",
+        "./app/*"
+      ],
+      "@/components/*": [
+        "./app/components/*"
+      ],
+      "@/lib/*": [
+        "./app/lib/*"
+      ],
+     
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "allowJs": true,
+    "noEmit": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/PortfolioCard.jsx",
+    "app/components/PricingCard.jsx",
+    "app/components/ServiceCard.jsx",
+    "app/components/StepCard.jsx",
+    "app/components/Testimonial.jsx",
+    "app/(home)/page.jsx",
+    "app/layout.jsx",
+    "app/components/ui/accordion.jsx",
+    "app/components/ui/alert-dialog.jsx",
+    "server/routes/demo.js",
+    "server/index.js",
+    "server/node-build.js",
+    "netlify/functions/api.js",
+    "app/services/page.jsx",
+    "app/(home)/project/[projectId]/page.jsx",
+    "app/pricing/page.jsx",
+    "app/lib/utils.spec.js",
+    "app/hooks/use-mobile.jsx",
+    "app/hooks/use-toast.js",
+    "app/dashboard/page.jsx",
+    "app/contact/page.jsx",
+    "app/components/ui/use-toast.js",
+    "app/components/ui/tooltip.jsx",
+    "app/components/ui/toggle.jsx",
+    "app/components/ui/toggle-group.jsx",
+    "app/components/ui/toaster.jsx",
+    "app/components/ui/button.jsx",
+    "app/components/ui/sonner.jsx",
+    "app/components/ui/tabs.jsx",
+    "app/components/ui/toast.jsx",
+    "tailwind.config.js",
+    "app/lib/utils.js",
+    ".next/dev/types/**/*.js",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
